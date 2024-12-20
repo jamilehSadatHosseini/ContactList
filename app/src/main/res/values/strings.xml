@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ContactsProject</string>
+    <string name="errorInLoadingContacts">مشکل در بازگذاری اطلاعات مخاطبین</string>
+    <string name="empty">دیتایی برای نمایش در پایگاه داده وجود ندارد</string>
+    <string name="accessDeny">Permission Denied. Please enable necessary permissions.</string>
+    <string name="errorSyncingData">خطا در سینک کردن اطلاعت مخاطبین به دیتای برنامه</string>
+    <string name="call">Call</string>
+    <string name="message">Message</string>
+</resources>
