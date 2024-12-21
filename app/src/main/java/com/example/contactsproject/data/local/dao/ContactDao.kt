@@ -55,5 +55,7 @@ interface ContactDao{
                 insertOrUpdateContactDetail(contactDetails)
             }
         }
+    @Query("DELETE FROM contact")
+    suspend fun deleteAllContacts()
 
 }

@@ -43,7 +43,10 @@ class RepositoryImp(
 
     override suspend fun updateLocalContacts() {
         when (val newContacts = contactObserver.getUpdatedContacts()) {
-            is ResultResponse.Success -> localDataSource.insertOrUpdateContacts(newContacts.data)
+            is ResultResponse.Success -> {
+                localDataSource.clearAllContacts()
+                localDataSource.insertOrUpdateContacts(newContacts.data)
+            }
             is ResultResponse.Failure -> ResultResponse.Failure(newContacts.exception)
 
         }

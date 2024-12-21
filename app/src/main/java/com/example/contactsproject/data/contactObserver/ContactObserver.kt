@@ -17,6 +17,7 @@ class ContactObserver(
 
     override fun onChange(selfChange: Boolean) {
         super.onChange(selfChange)
+        Log.e("jamileh","oncahnge")
         onChange()
     }
 

@@ -36,5 +36,9 @@ class LocalDataSourceImp(private val contactDao: ContactDao) : LocalDataSource {
         contactDao.updateContactDetails(contactDetail)
     }
 
+    override suspend fun clearAllContacts() {
+        contactDao.deleteAllContacts()
+    }
+
 
 }
