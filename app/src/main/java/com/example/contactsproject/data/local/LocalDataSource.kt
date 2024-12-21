@@ -10,7 +10,7 @@ interface LocalDataSource {
     suspend fun insertOrUpdateContacts(contacts: List<ContactListItem>)
 
     fun getContactDetailByID(id: String): LiveData<ContactEntity?>
-    suspend fun insertOrUpdateContactDetail(productEntity: ContactEntity)
+    suspend fun insertOrUpdateContactDetail(contactEntity: ContactEntity)
     suspend fun updateContactDetail(contactDetail: ContactEntity)
     suspend fun clearAllContacts()
 }
