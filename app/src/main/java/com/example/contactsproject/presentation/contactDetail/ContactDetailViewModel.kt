@@ -28,7 +28,6 @@ init {
 
 
     private fun startObservingContacts() {
-        useCases.stopObservingContacts.invoke()
         useCases.observingContacts{
             viewModelScope.launch {
                 useCases.contactsChanged.invoke()
