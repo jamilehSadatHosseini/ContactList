@@ -1,6 +1,5 @@
 package com.example.contactsproject.data.local
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import com.example.contactsproject.data.local.dao.ContactDao
 import com.example.contactsproject.domain.model.ContactEntity
